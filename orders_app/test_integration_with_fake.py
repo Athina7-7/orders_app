@@ -3,11 +3,6 @@ from database import SessionLocal
 from models import Order
 from user_repository import FakeUserRepository
 
-# ---- Fake usado en la APP ----
-class FakeUserRepository:
-    def get_user_email(self, user_id):
-        return f"user{user_id}@fake.local"
-        
 class DummyLogger:
     def log(self, msg):
         pass
